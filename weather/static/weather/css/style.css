@@ -1,3 +1,70 @@
-li {
-    color: green;
+
+button {
+  padding: 0;
+  float: left;
 }
+
+#time_sel {
+  position: absolute;
+  left: 315px;
+  top: 204px;
+  z-index:90;
+}
+
+#clockwise {
+  z-index: 90;
+  position: absolute;
+  left: 600px;
+  top: 1075px;
+}
+
+#anticlockwise {
+  z-index: 90;
+  position: absolute;
+  left: 600px;
+  top: 1200px;
+}
+
+#search {
+  z-index: 90;
+  position: absolute;
+  left: 35px;
+  top: 245px;
+}
+
+#gradient {
+  position: absolute;
+  left: 0px;
+  top: 170px;
+}
+
+#map {
+  position: absolute;
+  left: 10px;
+  top: 211px;
+}
+
+#alert{
+  position: absolute;
+  left: 86px;
+  top: 535px;
+}
+
+#alert_close{
+  position: absolute;
+  left: 654px;
+  top: 538px;
+  padding: 0px;
+}
+
+#read_more {
+  position: absolute;
+  left: 320px;
+  top: 820px;
+  color: white;
+  z-index: 91;
+  padding: 0;
+  background: 000000;
+  font-size: 30px;
+}
+

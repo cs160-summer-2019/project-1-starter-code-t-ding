@@ -8,8 +8,144 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
+  <style>
+  button {
+  padding: 0;
+  float: left;
+}
+
+#time_sel {
+  position: absolute;
+  left: 315px;
+  top: 204px;
+  z-index:90;
+}
+
+#clockwise {
+  z-index: 90;
+  position: absolute;
+  left: 600px;
+  top: 1075px;
+}
+
+#anticlockwise {
+  z-index: 90;
+  position: absolute;
+  left: 600px;
+  top: 1200px;
+}
+
+#search {
+  z-index: 90;
+  position: absolute;
+  left: 35px;
+  top: 245px;
+}
+
+#gradient {
+  position: absolute;
+  left: 0px;
+  top: 170px;
+}
+
+#map {
+  position: absolute;
+  left: 0px;
+  top: 211px;
+  z-index: -50;
+}
+
+#alert{
+  position: absolute;
+  left: 86px;
+  top: 535px;
+}
+
+#alert_close{
+  position: absolute;
+  left: 654px;
+  top: 538px;
+  padding: 0px;
+}
+
+#read_more {
+  position: absolute;
+  left: 320px;
+  top: 820px;
+  color: white;
+  z-index: 91;
+  padding: 0;
+  background: 000000;
+  font-size: 30px;
+}
+    
+        #oak {
+      position: absolute;
+      left: 300px;
+      top: 800px;
+      background: rgba(179, 179, 179, 0.4);
+      border: 0px;
+      font-size: 30px;
+      z-index: -1;
+    }
+    
+        #berk {
+      position: absolute;
+      left: 400px;
+      top: 500px;
+      background: rgba(179, 179, 179, 0.4);
+      border: 0px;
+      font-size: 30px;
+      z-index: -1;
+    }
+  </style>
+  
 </head>
 <body>
-	<!-- your comparison interface with alert here -->
+  <button>
+    <img src="/static/weather/assets/cloud.png">
+  </button>
+  <button>
+    <img src="/static/weather/assets/rain.png">
+  </button>
+  <button>
+    <img src="/static/weather/assets/temp.png">
+  </button>
+  <button>
+    <img src="/static/weather/assets/filter.png">
+  </button>
+  <p id="gradient">
+    <img src="/static/weather/assets/gradient.png" width="773" height="45">
+  </p>
+  <p id="time_sel">
+    <img src="/static/weather/assets/time.png">
+  </p>
+  <button id="search">
+    <img src="/static/weather/assets/search.png">
+  </button>
+  <button id="clockwise">
+    <img src="/static/weather/assets/clock.png">
+  </button>
+  <button id="anticlockwise">
+    <img src="/static/weather/assets/aclock.png">
+  </button>
+  <p id="map">
+    <img src="/static/weather/assets/map.png" width="773">
+  </p>
+  <p id="alert">
+    <img src="/static/weather/assets/alert.png">
+  </p>
+  <button id="alert_close">
+    <img src="/static/weather/assets/exit.png">
+  </button>
+  <button id="read_more">
+    Read More
+  </button>
+  <button id="berk">
+    Berkeley
+  </button>
+  <button id="oak">
+    Oakland
+  </button>
 </body>
 </html>

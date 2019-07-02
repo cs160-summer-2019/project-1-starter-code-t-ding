@@ -8,9 +8,199 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
+  <style>
+  
+    #location {
+      font-size: 50px;
+      position: absolute;
+      top: 0px;
+      left: 240px;
+    }
+    #bicon {
+      z-index: 10;
+      position: absolute;
+      top: 80px;
+      left: 60px;
+    }
+    #fgradient {
+      z-index: -10;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    
+    #cat {
+      position: absolute;
+      top: 680px;
+      left: 60px;
+      font-size: 35px;
+    }
+    
+    #darkgrey {
+      position: absolute;
+      top: 714px;
+      left: 60px;
+    }
+    
+    #lightgrey1 {
+      position: absolute;
+      top: 805px;
+      left: 60px;
+    }
+    
+    #t1 {
+      position: absolute;
+      top: 740px;
+      left: 60px;
+      font-size: 42px;
+    }
+    #i1 {
+      position: absolute;
+      top: 747px;
+      left: 427px;
+    }
+  
+        #lightgrey2 {
+      position: absolute;
+      top: 900px;
+      left: 60px;
+    }
+    
+    #t2 {
+      position: absolute;
+      top: 835px;
+      left: 60px;
+      font-size: 42px;
+    }
+    #i2 {
+      position: absolute;
+      top: 842px;
+      left: 427px;
+    }
+        #lightgrey3 {
+      position: absolute;
+      top: 995px;
+      left: 60px;
+    }
+    
+    #t3 {
+      position: absolute;
+      top: 930px;
+      left: 60px;
+      font-size: 42px;
+    }
+    #i3 {
+      position: absolute;
+      top: 937px;
+      left: 424px;
+    }
+        #t4 {
+      position: absolute;
+      top: 1025px;
+      left: 60px;
+      font-size: 42px;
+    }
+    #i4 {
+      position: absolute;
+      top: 1032px;
+      left: 424px;
+    }
+    #arrow {
+      position: absolute;
+      top: 1147px;
+      left: 72px;
+       background: rgba(179, 179, 179, 0);
+    }
+    #alertn{
+  position: absolute;
+  left: 86px;
+  top: 535px;
+  z-index: 90;
+}
+
+#alert_closen{
+  position: absolute;
+  left: 654px;
+  top: 538px;
+  padding: 0px;
+  z-index: 91;
+}
+
+#read_moren {
+  position: absolute;
+  left: 320px;
+  top: 820px;
+  color: white;
+  z-index: 91;
+  padding: 0;
+  background: 000000;
+  font-size: 30px;
+}
+  
+  </style>
+  
 </head>
 <body>
-	<!-- your single-location forecast with alert interface here -->
+	<p id="location">
+    Berkeley, CA
+  </p>
+  <p id="bicon">
+    <img src="/static/weather/assets/suntemp.png">
+  </p>
+  <p id="cat">
+    Time &nbsp &nbsp &nbsp &nbsp Temp &nbsp &nbsp &nbsp &nbsp Weather &nbsp &nbsp &nbsp Percip
+  </p>
+  <p id="fgradient">
+    <img src="/static/weather/assets/weathergradient.png">
+  </p>
+  <p id="darkgrey">
+    <img src="/static/weather/assets/darkgrey.png">
+  </p>
+  <p id="lightgrey1">
+    <img src="/static/weather/assets/lightgrey.png">
+  </p>
+  <p id="lightgrey2">
+    <img src="/static/weather/assets/lightgrey.png">
+  </p>
+  <p id="lightgrey3">
+    <img src="/static/weather/assets/lightgrey.png">
+  </p>
+  <p id="t1">
+    Now &nbsp &nbsp &nbsp &nbsp 73 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0%
+  </p>
+  <p id="i1">
+    <img src="/static/weather/assets/sun.png" height="52" width="52">
+  </p>
+  <p id="t2">
+    15:00 &nbsp &nbsp &nbsp 84 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0%
+  </p>
+  <p id="i2">
+    <img src="/static/weather/assets/sun.png" height="52" width="52">
+  </p>
+  <p id="t3">
+    16:00 &nbsp &nbsp &nbsp 62 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 80%
+  </p>
+  <p id="i3">
+    <img src="/static/weather/assets/rain2.png" height="52" width="69">
+  </p>
+    <p id="t4">
+    17:00 &nbsp &nbsp &nbsp 58 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 90%
+  </p>
+  <p id="i4">
+    <img src="/static/weather/assets/rain2.png" height="52" width="69">
+  </p>
+  <button id="arrow">
+    <img src="/static/weather/assets/arrow.png">
+  </button>
+    <p id="alertn">
+    <img src="/static/weather/assets/alert.png">
+  </p>
+  <button id="alert_closen">
+    <img src="/static/weather/assets/exit.png">
+  </button>
+  <button id="read_moren">
+    Read More
+  </button>
 </body>
 </html>
 
